@@ -1,6 +1,13 @@
+:root {
+  --primary-text-color: #434455;
+  --title-text-color: #2e2f42;
+  --accent-color: #e7e9fc;
+  --background-color: #f4f4fd;
+  --hover-color: #404bbf;
+}
 body {
-  background-color: ;
-  color: ;
+  background-color: #ffffff;
+  color: var(--primary-text-color);
 }
 .list {
   list-style: none;
@@ -17,38 +24,82 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/* maincolor: ; */
-/* second color: ; */
-/* color: ; */
-/* footer color: ; */
-/* background: ; */
-/* 2 background: ; */
-
-/* .logo {
+. nav {
+  background-color: var(--accent-color);
+}
+.logo {
   color: #4d5ae5;
 }
-.logo span {
-  color: #2e2f42;
+.decor {
+  color: var(--title-text-color);
 }
-/* site-nav */
-/* .site-nav .link {
-  color: #2e2f42;
+.site-nav .link {
+  color: var(--title-text-color);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: #404bbf;
+  color: var(--hover-color);
 }
-.address-nav .address {
-  color: #434455;
+.site-nav .link.current {
+  color: var(--hover-color);
 }
-.address-nav .address:hover,
-.address-nav .address:focus {
-  color: #404bbf;
+.address-nav .mail {
+  color: var(--primary-text-color);
 }
-/* menu */
-/* .menu-link {
+.address-nav .tel {
+  color: var(--primary-text-color);
+}
+.address-nav .mail:hover,
+.address-nav .mail:focus {
+  color: var(--hover-color);
+}
+.address-nav .tel:hover,
+.address-nav .tel:focus {
+  color: var(--hover-color);
+}
+.hero {
+  background-color: var(--title-text-color);
+}
+.hero-title {
+  color: #ffffff;
+}
+.btn {
+  color: #ffffff;
+  background-color: #4d5ae5;
+}
+.btn:hover,
+.btn:focus {
+  color: #ffffff;
+  background: #404bbf;
+}
+.section-title {
+  color: var(--title-text-color);
+}
+.team {
+  background-color: #f4f4fd;
+  color: var(--primary-text-color);
+}
+.team-title {
+  color: var(--title-text-color);
+}
+.member {
+  color: var(--title-text-color);
+}
+.footer {
+  background-color: var(--title-text-color);
+  color: var(--accent-color);
+}
+.footer-decor {
+  color: #f4f4fd;
+}
+.button.primary {
+  background-color: #404bbf;
+  color: #ffffff;
+}
+.button.secondary.secondary {
+  background-color: var(--background-color);
   color: #4d5ae5;
 }
-.menu-link {
-  color: #ffffff;
-} */
+.photo-title {
+  color: var(--title-text-color);
+}
