@@ -4,10 +4,16 @@
   --accent-color: #e7e9fc;
   --background-color: #f4f4fd;
   --hover-color: #404bbf;
+  --white-color: #ffffff;
+  --primary-brand: #4d5ae5;
 }
 body {
-  background-color: #ffffff;
+  background-color: var(--white-color);
   color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.02em;
+  font-size: 16px;
+  line-height: 1.5;
 }
 .list {
   list-style: none;
@@ -28,13 +34,31 @@ body {
   background-color: var(--accent-color);
 }
 .logo {
-  color: #4d5ae5;
+  color: var(--primary-brand);
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 .decor {
   color: var(--title-text-color);
+  font-family: Raleway, sans-serif;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 .site-nav .link {
   color: var(--title-text-color);
+  font-weight: 500;
+  text-decoration: none;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -43,63 +67,113 @@ body {
 .site-nav .link.current {
   color: var(--hover-color);
 }
-.address-nav .mail {
-  color: var(--primary-text-color);
-}
+.address-nav .mail,
 .address-nav .tel {
   color: var(--primary-text-color);
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
 }
-.address-nav .mail:hover,
-.address-nav .mail:focus {
-  color: var(--hover-color);
-}
-.address-nav .tel:hover,
-.address-nav .tel:focus {
+.address-nav :hover,
+.address-nav :focus {
   color: var(--hover-color);
 }
 .hero {
   background-color: var(--title-text-color);
 }
 .hero-title {
-  color: #ffffff;
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
 }
 .btn {
-  color: #ffffff;
-  background-color: #4d5ae5;
+  color: var(--white-color);
+  background-color: var(--primary-brand);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  cursor: pointer;
 }
 .btn:hover,
 .btn:focus {
-  color: #ffffff;
-  background: #404bbf;
+  color: var(--white-color);
+  background: var(--hover-color);
 }
 .section-title {
   color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
 }
-.team {
-  background-color: #f4f4fd;
-  color: var(--primary-text-color);
-}
+.title,
 .team-title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+}
+.team {
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
 }
 .member {
   color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
 }
 .footer {
   background-color: var(--title-text-color);
-  color: var(--accent-color);
+}
+.footer-logo {
+  color: var(--primary-brand);
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 .footer-decor {
-  color: #f4f4fd;
+  color: var(--background-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
 }
-.button.primary {
-  background-color: #404bbf;
-  color: #ffffff;
+.footer-text {
+  color: var(--accent-color);
 }
-.button.secondary.secondary {
+.button {
   background-color: var(--background-color);
-  color: #4d5ae5;
+  color: var(--primary-brand);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  cursor: pointer;
 }
-.photo-title {
+.button:hover,
+.button:focus {
+  background-color: var(--hover-color);
+  color: var(--white-color);
+}
+.link {
+  text-decoration: none;
+}
+.link .photo-title {
   color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.link .photo-text {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
 }
